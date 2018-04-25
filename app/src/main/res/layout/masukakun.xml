@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AkunMasuk">
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+
+    <RelativeLayout
+        android:background="@drawable/strip"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2">
+        <TextView
+            android:id="@+id/model"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:text="@string/welcome_app_galon"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="italic|bold" />
+
+        <Button
+            android:id="@+id/Home"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/buttonstyleclicked"
+            android:text="@string/home"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/profil"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonstyleclicked"
+            android:text="@string/Profil"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/info"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonstyleclicked"
+            android:text="@string/info" />
+    </RelativeLayout>
+
+    </android.support.v7.widget.GridLayout>
+
+    <ScrollView
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <GridLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="UselessParent">
+
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="20dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="80dp"
+                            android:text="@string/HargaRp18000"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+
+                        <ImageView
+                            android:id="@+id/galonn"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/galonn" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="20dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="80dp"
+                            android:text="@string/HargaRp16000"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+
+                        <ImageView
+                            android:id="@+id/elpigi"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/elpigi" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="20dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="80dp"
+                            android:text="@string/HargaRp5000"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+
+                        <ImageView
+                            android:id="@+id/airkemasan"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/vit_bottle" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:layout_column="0"
+                        android:layout_marginStart="20dp"
+                        android:layout_row="1"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="80dp"
+                            android:text="@string/HargaRp15000"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+
+                        <ImageView
+                            android:id="@+id/aquados"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/aquados" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:layout_column="1"
+                        android:layout_marginStart="20dp"
+                        android:layout_row="1"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="80dp"
+                            android:text="@string/HargaRp12000"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+
+                        <ImageView
+                            android:id="@+id/aqua1dos"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/aqua" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:layout_column="2"
+                        android:layout_marginStart="20dp"
+                        android:layout_row="1"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/nestle"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/nestle_pure" />
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:layout_column="0"
+                        android:layout_marginStart="20dp"
+                        android:layout_row="2"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="80dp"
+                            android:text="@string/HargaRp3000"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+
+                        <ImageView
+                            android:id="@+id/javaqua"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/javaqua" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:layout_column="1"
+                        android:layout_marginStart="20dp"
+                        android:layout_row="2"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="80dp"
+                            android:text="@string/HargaRp3000"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+
+                        <ImageView
+                            android:id="@+id/lemineral"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/lemineral" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:layout_column="2"
+                        android:layout_marginStart="20dp"
+                        android:layout_row="2"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="80dp"
+                            android:text="@string/HargaRp12000"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+
+                        <ImageView
+                            android:id="@+id/bwaqua"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/bwaqua" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:layout_column="0"
+                        android:layout_marginStart="20dp"
+                        android:layout_row="3"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="80dp"
+                            android:text="@string/HargaRp7000"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+
+                        <ImageView
+                            android:id="@+id/eksternalqua1"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/eksternalaqua1" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:layout_column="1"
+                        android:layout_marginStart="20dp"
+                        android:layout_row="3"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="80dp"
+                            android:text="@string/HargaRp5000"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+
+                        <ImageView
+                            android:id="@+id/disneyqua"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/disneyqua" />
+                    </FrameLayout>
+                </GridLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/HargaRp15000"
+        android:textAlignment="center"
+        android:textColor="#000000" />
+
+</LinearLayout>

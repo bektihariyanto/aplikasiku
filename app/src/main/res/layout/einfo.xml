@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".infone">
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="@drawable/strip"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout1">
+
+            <TextView
+                android:id="@+id/model"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:gravity="center"
+                android:text="@string/welcome_app_galon"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="italic|bold" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/buttonstyleclicked"
+                android:text="@string/home"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/profil"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@drawable/buttonstyleclicked"
+                android:text="@string/Profil"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:background="@drawable/buttonstyleclicked"
+                android:text="@string/info" />
+
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="161dp"
+        android:text="@string/GalonDenganJumlahPesanan"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_marginTop="211dp"
+        android:text="@string/AkanDikirimKe"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_centerVertical="true"
+        android:text="@string/DalamKurunWaktu"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="36dp"
+        android:layout_marginStart="-16dp"
+        android:layout_toEndOf="@id/textView7"
+        android:text="@string/Menit"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView9"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="53dp"
+        android:ems="10"
+        android:hint="@string/TampilAlamat"
+        android:inputType="textPersonName"
+        android:text="@string/Alamat1" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:hint="@string/Tampil"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Tampil" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="110dp"
+        android:hint="@string/berapa"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/berapa" />
+
+</RelativeLayout>

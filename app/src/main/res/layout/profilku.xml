@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kuprofil">
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="@drawable/strip"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout1">
+
+            <TextView
+                android:id="@+id/model"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:gravity="center"
+                android:text="@string/welcome_app_galon"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="italic|bold" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/buttonstyleclicked"
+                android:text="@string/home"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/profil"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@drawable/buttonstyleclicked"
+                android:text="@string/Profil"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:background="@drawable/buttonstyleclicked"
+                android:text="@string/info" />
+
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="239dp"
+        android:text="@string/Nama" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout5">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="133dp"
+        app:srcCompat="@drawable/fotouser"
+        android:contentDescription="@string/todo"  />
+</LinearLayout>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/Nama"
+        android:inputType="textPersonName"
+        android:text="@string/TampilNama"
+        tools:ignore="RelativeOverlap"
+        tools:targetApi="cupcake" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginBottom="247dp"
+        android:text="@string/Alamat" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/TampilAlamat"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginBottom="186dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="@string/No.Hp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/TampilNoHp"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/TampilEmail"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginBottom="118dp"
+        android:text="@string/Email" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp"
+        android:background="@drawable/buttonstyleselector"
+        android:text="@string/Edit"
+        android:textStyle="italic" />
+</RelativeLayout>

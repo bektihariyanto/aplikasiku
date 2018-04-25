@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="6dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="6dp"
+    android:background="@drawable/bg"
+    tools:context=".eLogin">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="700dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/delivery"
+        android:contentDescription="@string/todo" />
+
+    <TableLayout
+        android:id="@+id/table1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="131dp"
+        android:stretchColumns="2">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edittextstyle"
+            android:hint="@string/username"
+            android:inputType="text"
+            android:textColorHint="#fff" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextstyle"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="#fff"
+            android:textColorHint="#fff" />
+
+
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="290dp">
+        <Button
+            android:id="@+id/login"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonstyleselector"
+            android:orientation="horizontal"
+            android:text="@string/login"
+            android:textStyle="italic"
+            android:textColor="#000000"
+            android:layout_marginStart="50dp" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonstyleselector"
+            android:orientation="horizontal"
+            android:textStyle="italic"
+            android:text="@string/register"
+            android:textColor="#000000"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="50dp" />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="176dp"
+            android:layout_marginTop="350dp"
+            android:textStyle="bold"
+            android:textColor="#3F51B5"
+            android:text="@string/Lupa_Password"
+            android:layout_marginStart="220dp" />
+    </LinearLayout>
+
+</RelativeLayout>

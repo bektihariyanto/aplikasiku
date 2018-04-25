@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registrasi">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/register"
+        android:contentDescription="@string/todo" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="47dp"
+        android:background="#303F9F"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textColor="#303F9F"
+        android:layout_marginTop="75dp"
+        android:text="@string/daftargalonapps"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="137dp"
+        android:text="@string/nama"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/masuknama"
+        android:text="@string/Username"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/Alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/masukAlamat"
+        android:text="@string/Alamat"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/NoHp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/No.Hp"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="223dp"
+        android:text="@string/Email"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="176dp"
+        android:text="@string/Password"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:id="@+id/masukNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/masuknama"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-167dp"
+        android:ems="10"
+        android:hint="@string/masukkan_nama"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/masukAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/masuknama"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/masukkan_Alamat"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/masuknama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="167dp"
+        android:ems="10"
+        android:hint="@string/masukkan_Username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/masukNoHp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:hint="@string/masukkannohp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/masukmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Email"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/masukkanemail"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/masukpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/masukmail"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/masukkanpassword"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/registeri"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="79dp"
+        android:background="@drawable/buttonstyleselector"
+        android:textStyle="italic"
+        android:text="@string/register" />
+
+
+</RelativeLayout>
